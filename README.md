@@ -9,6 +9,8 @@ This is a set of bash scripts that will install Duo's interactive, self-service,
 4.  Add a unix integration at the duosecurity.com website
 5.  Copy and paste required keys into the dialog boxes
 
+![Sample Screenshot](/screenshots/screenshot.jpg?raw=true "Image of Dialog")
+
 # Notes
 This script is intended to be run after a fresh install of the ubuntu operating system.  It will replace your /etc/pam.d/common-auth file with a templated version after first backing it up.  It has been tested on Ubuntu 14.04 LTS (64 bit).  The script basically automates the instructions in the Duo Unix documentation at https://www.duosecurity.com/docs/duounix.  
 
