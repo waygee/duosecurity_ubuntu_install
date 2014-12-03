@@ -184,9 +184,9 @@ fi
 sed -i "s/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g" /etc/ssh/sshd_config
 echo "UseDNS no" >> /etc/ssh/sshd_config
 #==============================================| Add values to /etc/pam.d/sshd
-if grep -q pam_permit.so "/etc/pam.d/common-auth.org"; then
-  sed -i "s/@include common-auth/auth    required pam_duo.so/g" /etc/pam.d/sshd
-fi
+#if grep -q pam_permit.so "/etc/pam.d/common-auth.org"; then
+#  sed -i "s/@include common-auth/auth    required pam_duo.so/g" /etc/pam.d/sshd
+#fi
 #==============================================| Restart sshd
 DIALOG=${DIALOG=dialog}
 
